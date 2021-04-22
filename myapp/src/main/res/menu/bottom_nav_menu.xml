@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="智慧城市" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="全部服务" />
+
+    <item
+        android:id="@+id/zhsq"
+        android:icon="@drawable/ic_baseline_5g_24"
+        android:title="智慧社区" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="新闻" />
+    <item
+        android:id="@+id/center"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="个人中心" />
+
+</menu>

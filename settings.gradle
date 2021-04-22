@@ -1,0 +1,5 @@
+include ':myapp'
+include ':ducheyicheapplication'
+include ':exerciserapplication'
+include ':app'
+rootProject.name = "Jianyizhihuidangjian4-16"

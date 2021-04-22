@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <Button
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期选择" />
+    <EditText
+        android:id="@+id/data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请选择日期"/>
+    <Button
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间选择" />
+    <EditText
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请选时间"/>
+    <Button
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地点选择"/>
+    <EditText
+        android:id="@+id/adress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请选择地点"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera"
+        android:text="启动摄像头"/>
+    <ImageView
+        android:id="@+id/show_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+</LinearLayout>

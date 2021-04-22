@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ry_050.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jianyizhihuidangjian416"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity android:name=".ui.center.LoginActivity"></activity>
+        <activity android:name=".ui.center.ExitActivity" />
+        <activity android:name=".ui.center.YijianfakuiActivity" />
+        <activity android:name=".ui.center.UpdatamimaActivity" />
+        <activity android:name=".ui.center.DingdanliebiaoActivity" />
+        <activity android:name=".ui.center.GerenxinxiActivity" />
+        <activity android:name=".ui.home.xiangqingyeActivity" />
+        <activity android:name=".ui.home.SearcgActivity" />
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.GuideViewActivity.GuideViewActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

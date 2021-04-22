@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.center.centerFragment">
+    <include layout="@layout/toolbar"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="68dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="196dp"
+            android:text="nickname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/gerenxinxi"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="236dp"
+            android:text="个人信息"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/dingdanliebiao"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="300dp"
+            android:text="订单列表"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/updatamima"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="372dp"
+            android:text="修改密码"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/yijianfankui"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="444dp"
+            android:text="意见反馈"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="516dp"
+            android:text="退出"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
