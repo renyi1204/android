@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/yuyuexuzhi"
+        android:icon="@drawable/yuyuexuzhi"
+        android:title="预约须知" />
+    <item
+        android:id="@+id/lijiyuyue"
+        android:icon="@drawable/lijiyuyue"
+        android:title="立即预约" />
+    <item
+        android:id="@+id/wodeyuyue"
+        android:icon="@drawable/wodeyuyue"
+        android:title="我的预约" />
+    <item
+        android:id="@+id/changliangguanli"
+        android:icon="@drawable/cheliangguanli"
+        android:title="车辆管理" />
+</menu>

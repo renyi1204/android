@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zizhuyiche"
+    app:startDestination="@id/zizhuyiche">
+
+    <fragment
+        android:id="@+id/zizhuyiche"
+        android:name="com.ry_050.myapp.ducheyiche.zizhuyiche.zizhuyicheFragment"
+        android:label="zizhuyiche_fragment"
+        tools:layout="@layout/zizhuyiche_fragment" />
+    <fragment
+        android:id="@+id/yichelishi"
+        android:name="com.ry_050.myapp.ducheyiche.yichelishi.yichelishiFragment"
+        android:label="yichelishi_fragment"
+        tools:layout="@layout/yichelishi_fragment" />
+</navigation>

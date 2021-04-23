@@ -1,6 +1,7 @@
 package com.ry_050.myapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import com.bumptech.glide.Glide;
 import com.ry_050.myapp.MainActivity;
 import com.ry_050.myapp.R;
 import com.ry_050.myapp.data.Appdata;
+import com.ry_050.myapp.ducheyiche.zizhuyicheActivity;
+import com.ry_050.myapp.yuyuejianche.yuyuejiancheActivity;
 
 public class Appadapter extends RecyclerView.Adapter<Appadapter.myappad> {
     private Context context;
@@ -40,7 +43,49 @@ public class Appadapter extends RecyclerView.Adapter<Appadapter.myappad> {
         }
         holder.appTitle.setText(appdata.getRows().get(position).getServiceName());
         Glide.with(context).load(MainActivity.baseurl+appdata.getRows().get(position).getImgUrl()).into(holder.appImg);
+        holder.appImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                switch (position){
+                    case 0:
+                    intent=new Intent(context, yuyuejiancheActivity.class);
+                    break;
+                    case 1:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 2:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 3:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 4:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 5:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 6:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 7:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    case 8:
+                        intent=new Intent(context, zizhuyicheActivity.class);
+                        break;
+                    case 9:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                    default:
+                        intent=new Intent(context, yuyuejiancheActivity.class);
+                        break;
+                }
+                context.startActivity(intent);
+            }
 
+        });
     }
 
     @Override

@@ -16,7 +16,14 @@
         android:theme="@style/Theme.Jianyizhihuidangjian416"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
-        <activity android:name=".ui.center.LoginActivity"></activity>
+        <activity android:name=".ducheyiche.zizhuyicheActivity"></activity>
+        <activity android:name=".yuyuejianche.yuyuejiancheActivity" />
+        <activity android:name=".ui.zhsq.kuaidixiangqingyeActivity" />
+        <activity android:name=".ui.zhsq.youlinshejiaoActivity" />
+        <activity android:name=".ui.zhsq.shangyetuiguangActivity" />
+        <activity android:name=".ui.zhsq.kuaijianguanliActivity" />
+        <activity android:name=".ui.zhsq.wuyeguanliActivity" />
+        <activity android:name=".ui.center.LoginActivity" />
         <activity android:name=".ui.center.ExitActivity" />
         <activity android:name=".ui.center.YijianfakuiActivity" />
         <activity android:name=".ui.center.UpdatamimaActivity" />

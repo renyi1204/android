@@ -39,6 +39,7 @@ public class MainActivity extends BaseActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
         initView();
+
     }
 
     private void initView() {
@@ -66,9 +67,34 @@ public class MainActivity extends BaseActivity {
                 token=logindata.getToken();
                 runOnUiThread(()->{
                     Toast.makeText(MainActivity.this, "登陆成功"+token, Toast.LENGTH_SHORT).show();
+                    getinfo();
                 });
             }
         });
     }
+    private void getinfo() {
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        Request request = new Request.Builder()
+                .url("http://192.168.148.15:10002/getInfo")
+                .method("GET", null)
+                .addHeader("Authorization", token)
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
 
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String s=response.body().string();
+                Getinfodata getinfodata=new Gson().fromJson(s,Getinfodata.class);
+                runOnUiThread(()->{
+                    MainActivity.uid=getinfodata.getUser().getUserId();
+                    Toast.makeText(MainActivity.this, "id"+MainActivity.uid, Toast.LENGTH_SHORT).show();
+                });
+            }
+        });
+    }
 }

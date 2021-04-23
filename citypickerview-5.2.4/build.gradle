@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('citypickerview-5.2.4.aar'))

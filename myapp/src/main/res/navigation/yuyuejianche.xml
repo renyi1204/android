@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yuyuejianche"
+    app:startDestination="@id/yuyuexuzhi">
+
+    <fragment
+        android:id="@+id/yuyuexuzhi"
+        android:name="com.ry_050.myapp.yuyuejianche.yuyuexuzhi.yuyuexuzhiFragment"
+        android:label="yuyuexuzhi_fragment"
+        tools:layout="@layout/yuyuexuzhi_fragment" />
+    <fragment
+        android:id="@+id/changliangguanli"
+        android:name="com.ry_050.myapp.yuyuejianche.cheliangguanli.changliangguanliFragment"
+        android:label="changliangguanli_fragment"
+        tools:layout="@layout/changliangguanli_fragment" />
+    <fragment
+        android:id="@+id/lijiyuyue"
+        android:name="com.ry_050.myapp.yuyuejianche.lijiyuyue.lijiyuyueFragment"
+        android:label="lijiyuyue_fragment"
+        tools:layout="@layout/lijiyuyue_fragment" />
+    <fragment
+        android:id="@+id/wodeyuyue"
+        android:name="com.ry_050.myapp.yuyuejianche.wodeyuyue.wodeyuyueFragment"
+        android:label="wodeyuyue_fragment"
+        tools:layout="@layout/wodeyuyue_fragment" />
+</navigation>
